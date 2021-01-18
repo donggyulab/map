@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e56ddca6f9c54ff794d7ee3bde4d1947 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e56ddca6f9c54ff794d7ee3bde4d1947" ></div>
+        
+</body>
+<script>    
+    
+            var map_e56ddca6f9c54ff794d7ee3bde4d1947 = L.map(
+                "map_e56ddca6f9c54ff794d7ee3bde4d1947",
+                {
+                    center: [37.8, 127.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c686368370414d44b64896847869b238 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            var marker_0894910e14014f46aa1dd70afa999ec8 = L.marker(
+                [37.53489, 126.88214],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_0894910e14014f46aa1dd70afa999ec8.bindTooltip(
+                `<div>
+                     Seoul house
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33cd184c16a3401f85a910aa7e1077c4 = L.marker(
+                [38.1018, 127.39297042035032],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_33cd184c16a3401f85a910aa7e1077c4.bindTooltip(
+                `<div>
+                     Pocheon House
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20cac27d58214eb683cf5510269b6029 = L.marker(
+                [33.51041, 126.4914],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_20cac27d58214eb683cf5510269b6029.bindTooltip(
+                `<div>
+                     Jeju International Airport
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb761efaa7b14b06a3e3a54aa835eb19 = L.marker(
+                [33.51554, 126.5267],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_cb761efaa7b14b06a3e3a54aa835eb19.bindTooltip(
+                `<div>
+                     Jeju Dombedon
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdb49ef87cb841b8940251022f8bcaab = L.marker(
+                [33.44248, 126.4328],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_cdb49ef87cb841b8940251022f8bcaab.bindTooltip(
+                `<div>
+                     Jeju Dinosaur Land
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddd9dfd19a994b1c9e9452f047116f39 = L.marker(
+                [33.39413, 126.2397],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_ddd9dfd19a994b1c9e9452f047116f39.bindTooltip(
+                `<div>
+                     Jeju Hyeopjae Beach
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49facb514d9a4829a132257dd2de65d9 = L.marker(
+                [33.38952, 126.2393],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_49facb514d9a4829a132257dd2de65d9.bindTooltip(
+                `<div>
+                     Jeju Hallim Park
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aea859e89bc9407e8bb1c6bfb3f45e37 = L.marker(
+                [33.31461, 126.2737],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_aea859e89bc9407e8bb1c6bfb3f45e37.bindTooltip(
+                `<div>
+                     Jeju Glass Castle
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e4b6aff95d54c89ad08ccd3743ffb64 = L.marker(
+                [33.30589, 126.2894],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_4e4b6aff95d54c89ad08ccd3743ffb64.bindTooltip(
+                `<div>
+                     Jeju Osulloc Tea Museum
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b1c45ad90284dc1be696cf6bf201360 = L.marker(
+                [33.25035, 126.4122],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_0b1c45ad90284dc1be696cf6bf201360.bindTooltip(
+                `<div>
+                     Jeju Teddy Bear Museum
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d5b725313e4145b41ef0a1912a7219 = L.marker(
+                [33.25546, 126.4146],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_56d5b725313e4145b41ef0a1912a7219.bindTooltip(
+                `<div>
+                     Jeju Oseong Restaurant
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64dfadf66850494fb694d32a03033bf5 = L.marker(
+                [33.24865, 126.4124],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_64dfadf66850494fb694d32a03033bf5.bindTooltip(
+                `<div>
+                     Jeju Jungmun Tourist Complex
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecdf517d57b247039c827a075b4acae2 = L.marker(
+                [33.25469, 126.5192],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_ecdf517d57b247039c827a075b4acae2.bindTooltip(
+                `<div>
+                     Jeju Seogwipo KAL Hotel
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_951732b1cf3c402e985bdbf3fcb712f8 = L.marker(
+                [33.23775, 126.4251],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_951732b1cf3c402e985bdbf3fcb712f8.bindTooltip(
+                `<div>
+                     Jeju columnar joint
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e23303f37f91477fab39adcda2af5c99 = L.marker(
+                [33.45806, 126.9425],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_e23303f37f91477fab39adcda2af5c99.bindTooltip(
+                `<div>
+                     Jeju Seongsan Ilchulbong Peak
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7537bd9ed837428ca51f387c83496699 = L.marker(
+                [33.5043, 126.954],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_7537bd9ed837428ca51f387c83496699.bindTooltip(
+                `<div>
+                     Jeju Udo
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a6e0f7dfada43a49ef69809fd3ba405 = L.marker(
+                [33.45164, 126.49],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_1a6e0f7dfada43a49ef69809fd3ba405.bindTooltip(
+                `<div>
+                     Jeju Love Land
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de6f2db9d11d4b2f9e5a9416a04a0345 = L.marker(
+                [33.47227, 126.9322],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_de6f2db9d11d4b2f9e5a9416a04a0345.bindTooltip(
+                `<div>
+                     Jeju submarine
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3c6e42208844a5ea03ee72f24adf1fa = L.marker(
+                [33.51615, 126.5119],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_f3c6e42208844a5ea03ee72f24adf1fa.bindTooltip(
+                `<div>
+                     Jeju Yongduam
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c89cba9e74f47a6bdee4be43864dbe8 = L.marker(
+                [33.42354, 126.9293],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_2c89cba9e74f47a6bdee4be43864dbe8.bindTooltip(
+                `<div>
+                     Jeju Seopjikoji
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06dda6e495014242979241e40ca1d4a8 = L.marker(
+                [33.24107, 126.3134],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_06dda6e495014242979241e40ca1d4a8.bindTooltip(
+                `<div>
+                     Jeju Sanbangsan
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d89f385e8a949e48bdf82dd1f9705f0 = L.marker(
+                [33.45116, 126.4878],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_2d89f385e8a949e48bdf82dd1f9705f0.bindTooltip(
+                `<div>
+                     Jeju Mysterious Road
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74a028a4b02b411bb9d43f721c205f16 = L.marker(
+                [33.23907, 126.5446],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_74a028a4b02b411bb9d43f721c205f16.bindTooltip(
+                `<div>
+                     Jeju Oedolgae
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9c18ce20ad845ab85dbbed15c2bea11 = L.marker(
+                [33.45652, 126.667],
+                {}
+            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+        
+    
+            marker_d9c18ce20ad845ab85dbbed15c2bea11.bindTooltip(
+                `<div>
+                     Jeju Eco Land
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
