@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e56ddca6f9c54ff794d7ee3bde4d1947 {
+                #map_bed2219a762047f3aab346834bf0fe27 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -32,22 +32,28 @@
                 }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e56ddca6f9c54ff794d7ee3bde4d1947" ></div>
+            <div class="folium-map" id="map_bed2219a762047f3aab346834bf0fe27" ></div>
         
 </body>
 <script>    
     
-            var map_e56ddca6f9c54ff794d7ee3bde4d1947 = L.map(
-                "map_e56ddca6f9c54ff794d7ee3bde4d1947",
+            var map_bed2219a762047f3aab346834bf0fe27 = L.map(
+                "map_bed2219a762047f3aab346834bf0fe27",
                 {
                     center: [37.8, 127.0],
                     crs: L.CRS.EPSG3857,
                     zoom: 9,
                     zoomControl: true,
-                    preferCanvas: true
+                    preferCanvas: false,
                 }
             );
 
@@ -55,368 +61,691 @@
 
         
     
-            var tile_layer_c686368370414d44b64896847869b238 = L.tileLayer(
+            var tile_layer_76f314e05f7a428eb6a98774824afcf9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            var marker_0894910e14014f46aa1dd70afa999ec8 = L.marker(
+            var tile_layer_8b200755da314e23af39d15acff3bacc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_40d45d5bdc324644be4a57fde19f77fa = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_bf1bffb68c6241cea0514d43f92432cd = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_3a8a7cf5aeb94b59902c79b1865baa56 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_919ff3301d82412caf837793f0a1f169 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_4b929604f4be477487c661d9ae9617d2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var marker_4c2f0e1442de440392d5cf3eb733f309 = L.marker(
                 [37.53489, 126.88214],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_0894910e14014f46aa1dd70afa999ec8.bindTooltip(
-                `<div>
-                     Seoul house
-
-                 </div>`,
-                {"sticky": true}
+            var icon_b5c919af48ee403a9359e09c75dc712c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_4c2f0e1442de440392d5cf3eb733f309.setIcon(icon_b5c919af48ee403a9359e09c75dc712c);
         
     
-            var marker_33cd184c16a3401f85a910aa7e1077c4 = L.marker(
+        var popup_490ffb25cd5d4026b406897e367fea90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19a24057e4394d4eaa46ac746bd862c2 = $(`<div id="html_19a24057e4394d4eaa46ac746bd862c2" style="width: 100.0%; height: 100.0%;">Seoul house </div>`)[0];
+            popup_490ffb25cd5d4026b406897e367fea90.setContent(html_19a24057e4394d4eaa46ac746bd862c2);
+        
+
+        marker_4c2f0e1442de440392d5cf3eb733f309.bindPopup(popup_490ffb25cd5d4026b406897e367fea90)
+        ;
+
+        
+    
+    
+            var marker_236046911817463c84ada6442f607dc9 = L.marker(
                 [38.1018, 127.39297042035032],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_33cd184c16a3401f85a910aa7e1077c4.bindTooltip(
-                `<div>
-                     Pocheon House
-
-                 </div>`,
-                {"sticky": true}
+            var icon_8b18a9f617df4610a6c7c8c83f1b3115 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_236046911817463c84ada6442f607dc9.setIcon(icon_8b18a9f617df4610a6c7c8c83f1b3115);
         
     
-            var marker_20cac27d58214eb683cf5510269b6029 = L.marker(
+        var popup_59c6aa3f0b464ce18039f3f67e90bd2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e592b0fecf1d4e029be2b427975d497b = $(`<div id="html_e592b0fecf1d4e029be2b427975d497b" style="width: 100.0%; height: 100.0%;">Pocheon House </div>`)[0];
+            popup_59c6aa3f0b464ce18039f3f67e90bd2e.setContent(html_e592b0fecf1d4e029be2b427975d497b);
+        
+
+        marker_236046911817463c84ada6442f607dc9.bindPopup(popup_59c6aa3f0b464ce18039f3f67e90bd2e)
+        ;
+
+        
+    
+    
+            var marker_e49b28bb4f814e56811eea695ea8e73d = L.marker(
                 [33.51041, 126.4914],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_20cac27d58214eb683cf5510269b6029.bindTooltip(
-                `<div>
-                     Jeju International Airport
-
-                 </div>`,
-                {"sticky": true}
+            var icon_a9e40fc3a9974e629e63c18e76733e3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_e49b28bb4f814e56811eea695ea8e73d.setIcon(icon_a9e40fc3a9974e629e63c18e76733e3a);
         
     
-            var marker_cb761efaa7b14b06a3e3a54aa835eb19 = L.marker(
+        var popup_fc90b1d909a14f16a083b63eeb0998ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3170f82441cc4d0ba7ffd69e57651b4f = $(`<div id="html_3170f82441cc4d0ba7ffd69e57651b4f" style="width: 100.0%; height: 100.0%;">Jeju International Airport </div>`)[0];
+            popup_fc90b1d909a14f16a083b63eeb0998ac.setContent(html_3170f82441cc4d0ba7ffd69e57651b4f);
+        
+
+        marker_e49b28bb4f814e56811eea695ea8e73d.bindPopup(popup_fc90b1d909a14f16a083b63eeb0998ac)
+        ;
+
+        
+    
+    
+            var marker_a0b89af3be964574b8bcb3de00f5c5f8 = L.marker(
                 [33.51554, 126.5267],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_cb761efaa7b14b06a3e3a54aa835eb19.bindTooltip(
-                `<div>
-                     Jeju Dombedon
-
-                 </div>`,
-                {"sticky": true}
+            var icon_346a8e0a912f42d0ad79addf5317496f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_a0b89af3be964574b8bcb3de00f5c5f8.setIcon(icon_346a8e0a912f42d0ad79addf5317496f);
         
     
-            var marker_cdb49ef87cb841b8940251022f8bcaab = L.marker(
+        var popup_ec64a62b56cd4835a9a9747f9cb9695a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7daf5efec60469aa68c3524f6d4d67e = $(`<div id="html_a7daf5efec60469aa68c3524f6d4d67e" style="width: 100.0%; height: 100.0%;">Jeju Dombedon </div>`)[0];
+            popup_ec64a62b56cd4835a9a9747f9cb9695a.setContent(html_a7daf5efec60469aa68c3524f6d4d67e);
+        
+
+        marker_a0b89af3be964574b8bcb3de00f5c5f8.bindPopup(popup_ec64a62b56cd4835a9a9747f9cb9695a)
+        ;
+
+        
+    
+    
+            var marker_1da34734c1444eb0851f19d21f61e618 = L.marker(
                 [33.44248, 126.4328],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_cdb49ef87cb841b8940251022f8bcaab.bindTooltip(
-                `<div>
-                     Jeju Dinosaur Land
-
-                 </div>`,
-                {"sticky": true}
+            var icon_a7e2e0e09f6f4ee58aa518c091d3e65f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_1da34734c1444eb0851f19d21f61e618.setIcon(icon_a7e2e0e09f6f4ee58aa518c091d3e65f);
         
     
-            var marker_ddd9dfd19a994b1c9e9452f047116f39 = L.marker(
+        var popup_e0ad368df1b24f02924c107b15096770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1380106b43c049ba8fcd58329ec10202 = $(`<div id="html_1380106b43c049ba8fcd58329ec10202" style="width: 100.0%; height: 100.0%;">Jeju Dinosaur Land </div>`)[0];
+            popup_e0ad368df1b24f02924c107b15096770.setContent(html_1380106b43c049ba8fcd58329ec10202);
+        
+
+        marker_1da34734c1444eb0851f19d21f61e618.bindPopup(popup_e0ad368df1b24f02924c107b15096770)
+        ;
+
+        
+    
+    
+            var marker_24b19aa12f64487ea749fd802163fd98 = L.marker(
                 [33.39413, 126.2397],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_ddd9dfd19a994b1c9e9452f047116f39.bindTooltip(
-                `<div>
-                     Jeju Hyeopjae Beach
-
-                 </div>`,
-                {"sticky": true}
+            var icon_5fc5454fec424dc094ffafba78268fe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_24b19aa12f64487ea749fd802163fd98.setIcon(icon_5fc5454fec424dc094ffafba78268fe4);
         
     
-            var marker_49facb514d9a4829a132257dd2de65d9 = L.marker(
+        var popup_a35ac375d44244eb9eb3c0a516eadfbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_340c8f5c0e2b4cc5963b86b49a7048e1 = $(`<div id="html_340c8f5c0e2b4cc5963b86b49a7048e1" style="width: 100.0%; height: 100.0%;">Jeju Hyeopjae Beach </div>`)[0];
+            popup_a35ac375d44244eb9eb3c0a516eadfbf.setContent(html_340c8f5c0e2b4cc5963b86b49a7048e1);
+        
+
+        marker_24b19aa12f64487ea749fd802163fd98.bindPopup(popup_a35ac375d44244eb9eb3c0a516eadfbf)
+        ;
+
+        
+    
+    
+            var marker_a182440e10ab461988b6f54005c013f5 = L.marker(
                 [33.38952, 126.2393],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_49facb514d9a4829a132257dd2de65d9.bindTooltip(
-                `<div>
-                     Jeju Hallim Park
-
-                 </div>`,
-                {"sticky": true}
+            var icon_67d0b6f2900c41a99382e39f4b1a9ab9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_a182440e10ab461988b6f54005c013f5.setIcon(icon_67d0b6f2900c41a99382e39f4b1a9ab9);
         
     
-            var marker_aea859e89bc9407e8bb1c6bfb3f45e37 = L.marker(
+        var popup_668dcb2022884d7b9d4dfc8a56c51277 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fac8723002e40349f94fc33036a470c = $(`<div id="html_0fac8723002e40349f94fc33036a470c" style="width: 100.0%; height: 100.0%;">Jeju Hallim Park </div>`)[0];
+            popup_668dcb2022884d7b9d4dfc8a56c51277.setContent(html_0fac8723002e40349f94fc33036a470c);
+        
+
+        marker_a182440e10ab461988b6f54005c013f5.bindPopup(popup_668dcb2022884d7b9d4dfc8a56c51277)
+        ;
+
+        
+    
+    
+            var marker_edd05225d3c7477395051f362585ff81 = L.marker(
                 [33.31461, 126.2737],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_aea859e89bc9407e8bb1c6bfb3f45e37.bindTooltip(
-                `<div>
-                     Jeju Glass Castle
-
-                 </div>`,
-                {"sticky": true}
+            var icon_0f915fdefbab4457a0cd225d8d3a0b64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_edd05225d3c7477395051f362585ff81.setIcon(icon_0f915fdefbab4457a0cd225d8d3a0b64);
         
     
-            var marker_4e4b6aff95d54c89ad08ccd3743ffb64 = L.marker(
+        var popup_7d404927d8844240a434ac08ecd20394 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f75e987efcc494b9c14da4ed16fc755 = $(`<div id="html_0f75e987efcc494b9c14da4ed16fc755" style="width: 100.0%; height: 100.0%;">Jeju Glass Castle </div>`)[0];
+            popup_7d404927d8844240a434ac08ecd20394.setContent(html_0f75e987efcc494b9c14da4ed16fc755);
+        
+
+        marker_edd05225d3c7477395051f362585ff81.bindPopup(popup_7d404927d8844240a434ac08ecd20394)
+        ;
+
+        
+    
+    
+            var marker_1996d1ca0c1141b0898ab6ce83630ec8 = L.marker(
                 [33.30589, 126.2894],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_4e4b6aff95d54c89ad08ccd3743ffb64.bindTooltip(
-                `<div>
-                     Jeju Osulloc Tea Museum
-
-                 </div>`,
-                {"sticky": true}
+            var icon_b376672792334348b0833c550f0dbb03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_1996d1ca0c1141b0898ab6ce83630ec8.setIcon(icon_b376672792334348b0833c550f0dbb03);
         
     
-            var marker_0b1c45ad90284dc1be696cf6bf201360 = L.marker(
+        var popup_191c4159d9ad4f36931f1ebccb3e87ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9b785f2ef434324a8c6c6e8fb628870 = $(`<div id="html_a9b785f2ef434324a8c6c6e8fb628870" style="width: 100.0%; height: 100.0%;">Jeju Osulloc Tea Museum </div>`)[0];
+            popup_191c4159d9ad4f36931f1ebccb3e87ee.setContent(html_a9b785f2ef434324a8c6c6e8fb628870);
+        
+
+        marker_1996d1ca0c1141b0898ab6ce83630ec8.bindPopup(popup_191c4159d9ad4f36931f1ebccb3e87ee)
+        ;
+
+        
+    
+    
+            var marker_f9b975d0847d4aa79ff581d7413b75cb = L.marker(
                 [33.25035, 126.4122],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_0b1c45ad90284dc1be696cf6bf201360.bindTooltip(
-                `<div>
-                     Jeju Teddy Bear Museum
-
-                 </div>`,
-                {"sticky": true}
+            var icon_695ea135c24b4095b5578f1e7291852c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_f9b975d0847d4aa79ff581d7413b75cb.setIcon(icon_695ea135c24b4095b5578f1e7291852c);
         
     
-            var marker_56d5b725313e4145b41ef0a1912a7219 = L.marker(
+        var popup_86252d5577614bd59ef6d72cdd7b37bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab3b9442f05b4b5da7c771fa74d034a7 = $(`<div id="html_ab3b9442f05b4b5da7c771fa74d034a7" style="width: 100.0%; height: 100.0%;">Jeju Teddy Bear Museum </div>`)[0];
+            popup_86252d5577614bd59ef6d72cdd7b37bd.setContent(html_ab3b9442f05b4b5da7c771fa74d034a7);
+        
+
+        marker_f9b975d0847d4aa79ff581d7413b75cb.bindPopup(popup_86252d5577614bd59ef6d72cdd7b37bd)
+        ;
+
+        
+    
+    
+            var marker_f5115f509b1c44e2a44cd8748601a7dc = L.marker(
                 [33.25546, 126.4146],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_56d5b725313e4145b41ef0a1912a7219.bindTooltip(
-                `<div>
-                     Jeju Oseong Restaurant
-
-                 </div>`,
-                {"sticky": true}
+            var icon_4cbaddd5f9654b6aa01afaf483153f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_f5115f509b1c44e2a44cd8748601a7dc.setIcon(icon_4cbaddd5f9654b6aa01afaf483153f33);
         
     
-            var marker_64dfadf66850494fb694d32a03033bf5 = L.marker(
+        var popup_4ed0330344a24a84b543324e378e3d8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dbad9d9dc1a49f084fab4ecd22b226a = $(`<div id="html_1dbad9d9dc1a49f084fab4ecd22b226a" style="width: 100.0%; height: 100.0%;">Jeju Oseong Restaurant </div>`)[0];
+            popup_4ed0330344a24a84b543324e378e3d8c.setContent(html_1dbad9d9dc1a49f084fab4ecd22b226a);
+        
+
+        marker_f5115f509b1c44e2a44cd8748601a7dc.bindPopup(popup_4ed0330344a24a84b543324e378e3d8c)
+        ;
+
+        
+    
+    
+            var marker_2c65759ad4644950a4dd9e99dffcb253 = L.marker(
                 [33.24865, 126.4124],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_64dfadf66850494fb694d32a03033bf5.bindTooltip(
-                `<div>
-                     Jeju Jungmun Tourist Complex
-
-                 </div>`,
-                {"sticky": true}
+            var icon_e90c5a299ba1413992bc4498e829f786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_2c65759ad4644950a4dd9e99dffcb253.setIcon(icon_e90c5a299ba1413992bc4498e829f786);
         
     
-            var marker_ecdf517d57b247039c827a075b4acae2 = L.marker(
+        var popup_72d180406dde43518a99a384989415c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_424c3829fd2a43579e9f08cf59382b51 = $(`<div id="html_424c3829fd2a43579e9f08cf59382b51" style="width: 100.0%; height: 100.0%;">Jeju Jungmun Tourist Complex </div>`)[0];
+            popup_72d180406dde43518a99a384989415c0.setContent(html_424c3829fd2a43579e9f08cf59382b51);
+        
+
+        marker_2c65759ad4644950a4dd9e99dffcb253.bindPopup(popup_72d180406dde43518a99a384989415c0)
+        ;
+
+        
+    
+    
+            var marker_4fbc9dfa051943cd92dffeae6109c3af = L.marker(
                 [33.25469, 126.5192],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_ecdf517d57b247039c827a075b4acae2.bindTooltip(
-                `<div>
-                     Jeju Seogwipo KAL Hotel
-
-                 </div>`,
-                {"sticky": true}
+            var icon_b0410cdfc5104d028e91e4e4c31ce05c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_4fbc9dfa051943cd92dffeae6109c3af.setIcon(icon_b0410cdfc5104d028e91e4e4c31ce05c);
         
     
-            var marker_951732b1cf3c402e985bdbf3fcb712f8 = L.marker(
+        var popup_76d0aecc302e4f2d9573b00433f7bf29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77e9780d44d148caaddc7169893b4c1c = $(`<div id="html_77e9780d44d148caaddc7169893b4c1c" style="width: 100.0%; height: 100.0%;">Jeju Seogwipo KAL Hotel </div>`)[0];
+            popup_76d0aecc302e4f2d9573b00433f7bf29.setContent(html_77e9780d44d148caaddc7169893b4c1c);
+        
+
+        marker_4fbc9dfa051943cd92dffeae6109c3af.bindPopup(popup_76d0aecc302e4f2d9573b00433f7bf29)
+        ;
+
+        
+    
+    
+            var marker_df49bb63e81843c7aaaaeafc3dd8ca1d = L.marker(
                 [33.23775, 126.4251],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_951732b1cf3c402e985bdbf3fcb712f8.bindTooltip(
-                `<div>
-                     Jeju columnar joint
-
-                 </div>`,
-                {"sticky": true}
+            var icon_89ec8e1d95fd4fb4911aa3b0e51b3a59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_df49bb63e81843c7aaaaeafc3dd8ca1d.setIcon(icon_89ec8e1d95fd4fb4911aa3b0e51b3a59);
         
     
-            var marker_e23303f37f91477fab39adcda2af5c99 = L.marker(
+        var popup_5a3c1cf7177a4f96b63599e20cb7409a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8faa784ddc76452493cd21aaa4af5f00 = $(`<div id="html_8faa784ddc76452493cd21aaa4af5f00" style="width: 100.0%; height: 100.0%;">Jeju columnar joint </div>`)[0];
+            popup_5a3c1cf7177a4f96b63599e20cb7409a.setContent(html_8faa784ddc76452493cd21aaa4af5f00);
+        
+
+        marker_df49bb63e81843c7aaaaeafc3dd8ca1d.bindPopup(popup_5a3c1cf7177a4f96b63599e20cb7409a)
+        ;
+
+        
+    
+    
+            var marker_3a5ce501c3734f7fa2615015ba1be997 = L.marker(
                 [33.45806, 126.9425],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_e23303f37f91477fab39adcda2af5c99.bindTooltip(
-                `<div>
-                     Jeju Seongsan Ilchulbong Peak
-
-                 </div>`,
-                {"sticky": true}
+            var icon_7441917b6e334af29133a2dfdcd3fc52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_3a5ce501c3734f7fa2615015ba1be997.setIcon(icon_7441917b6e334af29133a2dfdcd3fc52);
         
     
-            var marker_7537bd9ed837428ca51f387c83496699 = L.marker(
+        var popup_92258b6f18074f21bfea3b9ba33c7bd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a83e7bf1583a4eb7959a024957cfda8a = $(`<div id="html_a83e7bf1583a4eb7959a024957cfda8a" style="width: 100.0%; height: 100.0%;">Jeju Seongsan Ilchulbong Peak </div>`)[0];
+            popup_92258b6f18074f21bfea3b9ba33c7bd8.setContent(html_a83e7bf1583a4eb7959a024957cfda8a);
+        
+
+        marker_3a5ce501c3734f7fa2615015ba1be997.bindPopup(popup_92258b6f18074f21bfea3b9ba33c7bd8)
+        ;
+
+        
+    
+    
+            var marker_9bf8e79223ad4e859db6eec6bcee5c45 = L.marker(
                 [33.5043, 126.954],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_7537bd9ed837428ca51f387c83496699.bindTooltip(
-                `<div>
-                     Jeju Udo
-
-                 </div>`,
-                {"sticky": true}
+            var icon_d617da4893a74ac3b1685d586387d7b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_9bf8e79223ad4e859db6eec6bcee5c45.setIcon(icon_d617da4893a74ac3b1685d586387d7b3);
         
     
-            var marker_1a6e0f7dfada43a49ef69809fd3ba405 = L.marker(
+        var popup_872dd3fdb3a04ae08df49b72704e5f93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b283bff92054d4fb4f5e9ea3258d0f1 = $(`<div id="html_3b283bff92054d4fb4f5e9ea3258d0f1" style="width: 100.0%; height: 100.0%;">Jeju Udo </div>`)[0];
+            popup_872dd3fdb3a04ae08df49b72704e5f93.setContent(html_3b283bff92054d4fb4f5e9ea3258d0f1);
+        
+
+        marker_9bf8e79223ad4e859db6eec6bcee5c45.bindPopup(popup_872dd3fdb3a04ae08df49b72704e5f93)
+        ;
+
+        
+    
+    
+            var marker_738ecc89d7644ea7b1495c83f355f810 = L.marker(
                 [33.45164, 126.49],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_1a6e0f7dfada43a49ef69809fd3ba405.bindTooltip(
-                `<div>
-                     Jeju Love Land
-
-                 </div>`,
-                {"sticky": true}
+            var icon_9c0f1cdb4903473c93f02d2f2e9b4ce8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_738ecc89d7644ea7b1495c83f355f810.setIcon(icon_9c0f1cdb4903473c93f02d2f2e9b4ce8);
         
     
-            var marker_de6f2db9d11d4b2f9e5a9416a04a0345 = L.marker(
+        var popup_e8203e0d3820457ca14e545ed4f95591 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4def87f088c4fabb515bb3300f7f863 = $(`<div id="html_a4def87f088c4fabb515bb3300f7f863" style="width: 100.0%; height: 100.0%;">Jeju Love Land </div>`)[0];
+            popup_e8203e0d3820457ca14e545ed4f95591.setContent(html_a4def87f088c4fabb515bb3300f7f863);
+        
+
+        marker_738ecc89d7644ea7b1495c83f355f810.bindPopup(popup_e8203e0d3820457ca14e545ed4f95591)
+        ;
+
+        
+    
+    
+            var marker_efa0c4b50bfd4338941c8c4aec5d734c = L.marker(
                 [33.47227, 126.9322],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_de6f2db9d11d4b2f9e5a9416a04a0345.bindTooltip(
-                `<div>
-                     Jeju submarine
-
-                 </div>`,
-                {"sticky": true}
+            var icon_2b0b0dc8828b462ea8ed5a148aa421e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_efa0c4b50bfd4338941c8c4aec5d734c.setIcon(icon_2b0b0dc8828b462ea8ed5a148aa421e9);
         
     
-            var marker_f3c6e42208844a5ea03ee72f24adf1fa = L.marker(
+        var popup_8fabec2e972b49e6a1564cfd29fff74f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87a86335e5104aed8308cc1f25038d78 = $(`<div id="html_87a86335e5104aed8308cc1f25038d78" style="width: 100.0%; height: 100.0%;">Jeju submarine </div>`)[0];
+            popup_8fabec2e972b49e6a1564cfd29fff74f.setContent(html_87a86335e5104aed8308cc1f25038d78);
+        
+
+        marker_efa0c4b50bfd4338941c8c4aec5d734c.bindPopup(popup_8fabec2e972b49e6a1564cfd29fff74f)
+        ;
+
+        
+    
+    
+            var marker_63d50421c7f64dd3a3f8c1cf4a1de2b2 = L.marker(
                 [33.51615, 126.5119],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_f3c6e42208844a5ea03ee72f24adf1fa.bindTooltip(
-                `<div>
-                     Jeju Yongduam
-
-                 </div>`,
-                {"sticky": true}
+            var icon_bf432275abef4669bf66603a9516fd60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_63d50421c7f64dd3a3f8c1cf4a1de2b2.setIcon(icon_bf432275abef4669bf66603a9516fd60);
         
     
-            var marker_2c89cba9e74f47a6bdee4be43864dbe8 = L.marker(
+        var popup_4b8589458470492b8a85140dd1e28310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5170369e1664eb486ca15c228f668d9 = $(`<div id="html_b5170369e1664eb486ca15c228f668d9" style="width: 100.0%; height: 100.0%;">Jeju Yongduam </div>`)[0];
+            popup_4b8589458470492b8a85140dd1e28310.setContent(html_b5170369e1664eb486ca15c228f668d9);
+        
+
+        marker_63d50421c7f64dd3a3f8c1cf4a1de2b2.bindPopup(popup_4b8589458470492b8a85140dd1e28310)
+        ;
+
+        
+    
+    
+            var marker_24ff91e9e26541bf8e51701f3304bd22 = L.marker(
                 [33.42354, 126.9293],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_2c89cba9e74f47a6bdee4be43864dbe8.bindTooltip(
-                `<div>
-                     Jeju Seopjikoji
-
-                 </div>`,
-                {"sticky": true}
+            var icon_ea14ec15081e4dee96e39b68f1413e2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_24ff91e9e26541bf8e51701f3304bd22.setIcon(icon_ea14ec15081e4dee96e39b68f1413e2c);
         
     
-            var marker_06dda6e495014242979241e40ca1d4a8 = L.marker(
+        var popup_fe2452b6174a46539e63ff8ccc507c08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7163917104fe4e18a11402c0179da301 = $(`<div id="html_7163917104fe4e18a11402c0179da301" style="width: 100.0%; height: 100.0%;">Jeju Seopjikoji </div>`)[0];
+            popup_fe2452b6174a46539e63ff8ccc507c08.setContent(html_7163917104fe4e18a11402c0179da301);
+        
+
+        marker_24ff91e9e26541bf8e51701f3304bd22.bindPopup(popup_fe2452b6174a46539e63ff8ccc507c08)
+        ;
+
+        
+    
+    
+            var marker_1d9a3870f23d4ea6af65eeabf21dd2fa = L.marker(
                 [33.24107, 126.3134],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_06dda6e495014242979241e40ca1d4a8.bindTooltip(
-                `<div>
-                     Jeju Sanbangsan
-
-                 </div>`,
-                {"sticky": true}
+            var icon_ed8cce22d19d4222ab6c4199dd0272c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_1d9a3870f23d4ea6af65eeabf21dd2fa.setIcon(icon_ed8cce22d19d4222ab6c4199dd0272c0);
         
     
-            var marker_2d89f385e8a949e48bdf82dd1f9705f0 = L.marker(
+        var popup_f3521c7a271248d9b7a993fdb9f7f037 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e141d1f665c443d0ac52ad58b3cec7cb = $(`<div id="html_e141d1f665c443d0ac52ad58b3cec7cb" style="width: 100.0%; height: 100.0%;">Jeju Sanbangsan </div>`)[0];
+            popup_f3521c7a271248d9b7a993fdb9f7f037.setContent(html_e141d1f665c443d0ac52ad58b3cec7cb);
+        
+
+        marker_1d9a3870f23d4ea6af65eeabf21dd2fa.bindPopup(popup_f3521c7a271248d9b7a993fdb9f7f037)
+        ;
+
+        
+    
+    
+            var marker_cfaf3828e0574e2a9e52f19c44cfbb6c = L.marker(
                 [33.45116, 126.4878],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_2d89f385e8a949e48bdf82dd1f9705f0.bindTooltip(
-                `<div>
-                     Jeju Mysterious Road
-
-                 </div>`,
-                {"sticky": true}
+            var icon_cc055547f7b443949a87165f83a2c006 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_cfaf3828e0574e2a9e52f19c44cfbb6c.setIcon(icon_cc055547f7b443949a87165f83a2c006);
         
     
-            var marker_74a028a4b02b411bb9d43f721c205f16 = L.marker(
+        var popup_44bd766bb128451f9f8340473e7fb87d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1d2d522b5b044f2962f101b04b0344c = $(`<div id="html_b1d2d522b5b044f2962f101b04b0344c" style="width: 100.0%; height: 100.0%;">Jeju Mysterious Road </div>`)[0];
+            popup_44bd766bb128451f9f8340473e7fb87d.setContent(html_b1d2d522b5b044f2962f101b04b0344c);
+        
+
+        marker_cfaf3828e0574e2a9e52f19c44cfbb6c.bindPopup(popup_44bd766bb128451f9f8340473e7fb87d)
+        ;
+
+        
+    
+    
+            var marker_e3aee487aca94efd8425dbfb1970afb5 = L.marker(
                 [33.23907, 126.5446],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_74a028a4b02b411bb9d43f721c205f16.bindTooltip(
-                `<div>
-                     Jeju Oedolgae
-
-                 </div>`,
-                {"sticky": true}
+            var icon_4ddfb22871af48e1be045b7f507271db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_e3aee487aca94efd8425dbfb1970afb5.setIcon(icon_4ddfb22871af48e1be045b7f507271db);
         
     
-            var marker_d9c18ce20ad845ab85dbbed15c2bea11 = L.marker(
+        var popup_25f7768b8918499c9f5a456c6f2c6cbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_495182b7d7a14cca953b0d8de2c19678 = $(`<div id="html_495182b7d7a14cca953b0d8de2c19678" style="width: 100.0%; height: 100.0%;">Jeju Oedolgae </div>`)[0];
+            popup_25f7768b8918499c9f5a456c6f2c6cbe.setContent(html_495182b7d7a14cca953b0d8de2c19678);
+        
+
+        marker_e3aee487aca94efd8425dbfb1970afb5.bindPopup(popup_25f7768b8918499c9f5a456c6f2c6cbe)
+        ;
+
+        
+    
+    
+            var marker_1249a39098814eef84b9337ad9dcea1d = L.marker(
                 [33.45652, 126.667],
                 {}
-            ).addTo(map_e56ddca6f9c54ff794d7ee3bde4d1947);
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
         
     
-            marker_d9c18ce20ad845ab85dbbed15c2bea11.bindTooltip(
-                `<div>
-                     Jeju Eco Land
-                 </div>`,
-                {"sticky": true}
+            var icon_2e68f5319b98428d91cfb620ae7f6b70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "lightgreen", "prefix": "fa"}
             );
+            marker_1249a39098814eef84b9337ad9dcea1d.setIcon(icon_2e68f5319b98428d91cfb620ae7f6b70);
+        
+    
+        var popup_dae77562c8f0420f91806ad0a2834bf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cd761a07a3d40a9af4af08a85f68c27 = $(`<div id="html_4cd761a07a3d40a9af4af08a85f68c27" style="width: 100.0%; height: 100.0%;">Jeju Eco Land</div>`)[0];
+            popup_dae77562c8f0420f91806ad0a2834bf1.setContent(html_4cd761a07a3d40a9af4af08a85f68c27);
+        
+
+        marker_1249a39098814eef84b9337ad9dcea1d.bindPopup(popup_dae77562c8f0420f91806ad0a2834bf1)
+        ;
+
+        
+    
+    
+            L.control.fullscreen(
+                {"forceSeparateButtom": true, "forceSeparateButton": false, "position": "topright", "title": "Zoom", "titleCancel": "Zoom out"}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+        
+    
+            var tile_layer_445397207b7e4b608a1c5bc67929a46e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_496a4ccd115d4d5a9390eb252b516f97 = new L.Control.MiniMap(
+                tile_layer_445397207b7e4b608a1c5bc67929a46e,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_bed2219a762047f3aab346834bf0fe27.addControl(mini_map_496a4ccd115d4d5a9390eb252b516f97);
+        
+    
+            var locate_control_60079a00800f48c3bb1dc53ac45129d0 = L.control.locate(
+                {"color": "red"}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+            
+        
+    
+            var layer_control_8645e92404c34e69831629998e8f3149 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8b200755da314e23af39d15acff3bacc,
+                    "stamenterrain" : tile_layer_40d45d5bdc324644be4a57fde19f77fa,
+                    "stamentoner" : tile_layer_bf1bffb68c6241cea0514d43f92432cd,
+                    "stamenwatercolor" : tile_layer_3a8a7cf5aeb94b59902c79b1865baa56,
+                    "cartodbpositron" : tile_layer_919ff3301d82412caf837793f0a1f169,
+                    "cartodbdark_matter" : tile_layer_4b929604f4be477487c661d9ae9617d2,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_8645e92404c34e69831629998e8f3149.base_layers,
+                layer_control_8645e92404c34e69831629998e8f3149.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bed2219a762047f3aab346834bf0fe27);
+            tile_layer_40d45d5bdc324644be4a57fde19f77fa.remove();
+            tile_layer_bf1bffb68c6241cea0514d43f92432cd.remove();
+            tile_layer_3a8a7cf5aeb94b59902c79b1865baa56.remove();
+            tile_layer_919ff3301d82412caf837793f0a1f169.remove();
+            tile_layer_4b929604f4be477487c661d9ae9617d2.remove();
         
 </script>
